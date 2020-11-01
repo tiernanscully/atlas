@@ -15,8 +15,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-    - name: Install nightly rust
-      uses: dtolnay/rust-toolchain@nightly
     - name: Build
       run: cargo build
     - name: Run tests
